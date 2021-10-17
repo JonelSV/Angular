@@ -1,0 +1,35 @@
+<!-- <p>sales-person-list works!</p>
+
+
+<p>LIst test</p>
+
+<p>
+{{salesPersonList[0].firstName}}
+{{salesPersonList[0].lastName}}
+
+</p> -->
+
+<table class="table table-hover">
+    <thread class="thead-dark">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email </th>
+            <th>Sales Volume</th>
+        </tr>
+
+    </thread>
+
+    <tbody>
+        <tr *ngFor = "let tempSalesPerson of salesPersonList">
+            <td>{{ tempSalesPerson.firstName}}</td>
+            <td>{{ tempSalesPerson.lastName}}</td>
+            <td>{{ tempSalesPerson.email}}</td>
+            <td>{{ tempSalesPerson.salesVolume}}</td>
+            
+        </tr>
+
+    </tbody>
+
+
+</table>
